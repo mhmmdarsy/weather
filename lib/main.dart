@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: const Color.fromARGB(
             255, 66, 172, 70)),
       ),
-      home: const MyHomePage(title: 'Weather App'),
+      home: const MyHomePage(title: 'Cuacaku'),
     );
   }
 }
