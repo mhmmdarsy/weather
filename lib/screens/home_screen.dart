@@ -11,6 +11,7 @@ class HomeScreen extends StatelessWidget {
         title: const Text('Cuacaku'),
         centerTitle: true,
         elevation: 0,
+        backgroundColor: Colors.transparent,
         leading: IconButton(
           icon: const Icon(
             Icons.location_on_sharp,
@@ -50,7 +51,7 @@ class HomeScreen extends StatelessWidget {
       body: Center(
         child: Column(
           children: [
-            Image.asset("assets/partly_cloudy.png"),
+            Image.asset("lib/assets/partly-cloudy.png"),
           ],
         ),
       ),
