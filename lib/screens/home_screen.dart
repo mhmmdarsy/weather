@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
@@ -11,22 +12,31 @@ class HomeScreen extends StatelessWidget {
         centerTitle: true,
         elevation: 0,
         leading: IconButton(
-          icon: const Icon(Icons.location_on_sharp),
+          icon: const Icon(
+            Icons.location_on_sharp,
+            color: Colors.black
+            ),
           tooltip: 'Lokasi Saya',
           onPressed: () {
-            // TODO: Handle current location action
+            // TODO: Handle location action
           },
         ),
         actions: [
           IconButton(
-            icon: const Icon(Icons.refresh),
+            icon: const Icon(
+              Icons.refresh,
+              color: Colors.black
+              ),
             tooltip: 'Muat Ulang',
             onPressed: () {
               // TODO: Handle refresh action
             },
           ),
           IconButton(
-            icon: const Icon(Icons.search),
+            icon: const Icon(
+              Icons.search,
+              color: Colors.black
+              ),
             tooltip: 'Cari Kota',
             onPressed: () {
               // TODO: Handle search action
@@ -34,10 +44,17 @@ class HomeScreen extends StatelessWidget {
           ),
         ],
       ),
-      body: const Center(
-        child: Text('Konten cuaca akan tampil di sini'),
+
+      backgroundColor: Colors.grey,
+
+      body: Center(
+        child: Column(
+          children: [
+            Image.asset("assets/partly_cloudy.png"),
+          ],
+        ),
       ),
+
     );
   }
 }
-
