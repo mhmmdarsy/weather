@@ -1,3 +1,1 @@
-# weather_app
-
-Weather app with Flutter.
+first flutter project.
